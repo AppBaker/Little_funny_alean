@@ -49,9 +49,11 @@ script = ExtResource( 2 )
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
+volume_db = -6.19
 
 [node name="PainSounnd" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
+volume_db = -3.714
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -12, -64 )
@@ -61,7 +63,6 @@ shape = SubResource( 1 )
 position = Vector2( -10, -67 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 1
 speed_scale = 0.5
 playing = true
 
@@ -82,43 +83,45 @@ position = Vector2( -19, -48 )
 motion_mirroring = Vector2( 2048, 2048 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = -400.0
+margin_top = -908.0
+margin_right = 1922.0
+margin_bottom = 2245.0
 texture = ExtResource( 14 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
 position = Vector2( -19, -394 )
-motion_scale = Vector2( 0.25, 1 )
-motion_offset = Vector2( 0, 200 )
+motion_scale = Vector2( 0.25, 0.9 )
 motion_mirroring = Vector2( 2048, 0 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer2"]
 margin_left = 9.0
-margin_top = 461.0
+margin_top = 460.0
 margin_right = 2057.0
-margin_bottom = 2509.0
+margin_bottom = 2508.0
 texture = ExtResource( 15 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
 position = Vector2( 0, 173 )
-motion_scale = Vector2( 0.5, 1 )
+motion_scale = Vector2( 0.5, 0.9 )
 motion_mirroring = Vector2( 2048, 0 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer3"]
-margin_left = 9.0
-margin_top = -64.0
-margin_right = 2057.0
-margin_bottom = 1984.0
+margin_left = -412.0
+margin_top = -53.0
+margin_right = 4283.0
+margin_bottom = 2288.0
 texture = ExtResource( 16 )
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
 position = Vector2( 0, 173 )
-motion_scale = Vector2( 0.75, 1 )
+rotation = 0.0698132
+motion_scale = Vector2( 0.75, 0.9 )
 motion_mirroring = Vector2( 2048, 0 )
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/ParallaxBackground/ParallaxLayer4"]
-margin_left = 34.0
-margin_top = -51.0
-margin_right = 2082.0
-margin_bottom = 1997.0
+margin_left = -299.158
+margin_top = -6.14679
+margin_right = 1931.85
+margin_bottom = 2041.86
 texture = ExtResource( 17 )
